@@ -1,5 +1,12 @@
 tasks = []
 
+def add_task(task):
+    if not task.strip():
+        print("Task cannot be empty.")
+        return
+
+    tasks.append(task)
+    print(f"Task added: {task}")
 
 def display_tasks():
     if not tasks:
